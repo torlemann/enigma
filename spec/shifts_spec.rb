@@ -41,4 +41,10 @@ RSpec.describe ShiftGenerator do
     expect(shifts.shifts('02715','040895')).to eq(expected)
   end
 
+  it "can rotate" do
+    expect(shifts.rotate(3)["h"]).to eq "k"
+    expect(shifts.rotate(27)["e"]).to eq "e"
+    expect(shifts.rotate(73)["l"]).to eq "d"
+  end
+
 end
