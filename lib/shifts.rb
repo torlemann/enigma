@@ -35,4 +35,9 @@ class ShiftGenerator
       D: keys[:d] + offsets[:off_d]
     }
   end
+
+  def rotate(shift)
+   rotate = @character_set.rotate(shift)
+   @character_set.zip(rotate).to_h
+ end
 end
