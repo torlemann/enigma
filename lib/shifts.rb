@@ -24,4 +24,15 @@ class ShiftGenerator
       off_d: digits[3].to_i
     }
   end
+
+  def shifts(key, date)
+    keys = keys(key)
+    offsets = offsets(date)
+    {
+      A: keys[:a] + offsets[:off_a],
+      B: keys[:b] + offsets[:off_b],
+      C: keys[:c] + offsets[:off_c],
+      D: keys[:d] + offsets[:off_d]
+    }
+  end
 end

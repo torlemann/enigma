@@ -31,4 +31,14 @@ RSpec.describe ShiftGenerator do
     expect(shifts.offsets('040895')).to eq (expected)
   end
 
+  it "can create shifts" do
+    expected = {
+      :A => 3,
+      :B => 27,
+      :C => 73,
+      :D => 20
+    }
+    expect(shifts.shifts('02715','040895')).to eq(expected)
+  end
+
 end
