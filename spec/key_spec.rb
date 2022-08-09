@@ -1,8 +1,7 @@
-
 require './lib/key'
 
 RSpec.describe Key do
-  let(:key) {Key.new}
+  let(:key) { Key.new }
 
   it 'exists' do
     expect(key).to be_a Key
@@ -14,10 +13,10 @@ RSpec.describe Key do
 
   it 'can create keys from key' do
     expected = {
-      :a => 2,
-      :b => 27,
-      :c => 71,
-      :d => 15
+      a: 2,
+      b: 27,
+      c: 71,
+      d: 15
     }
     expect(key.key_splitter('02715')).to eq(expected)
   end
