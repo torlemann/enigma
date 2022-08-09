@@ -1,6 +1,4 @@
-require 'date'
-require './lib/shifts'
-require './lib/enigma'
+require_relative 'spec_helper'
 
 RSpec.describe Enigma do
   let(:enigma) { enigma = Enigma.new }

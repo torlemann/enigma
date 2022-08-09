@@ -1,4 +1,4 @@
-require './lib/offset'
+require_relative 'spec_helper'
 
 RSpec.describe Offset do
   let(:offsets) { Offset.new }

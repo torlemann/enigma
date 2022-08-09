@@ -1,4 +1,4 @@
-require './lib/key'
+require_relative 'spec_helper'
 
 RSpec.describe Key do
   let(:key) { Key.new }

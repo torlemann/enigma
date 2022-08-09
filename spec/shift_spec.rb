@@ -1,4 +1,4 @@
-require './lib/shifts'
+require_relative 'spec_helper'
 
 RSpec.describe Shift do
   let(:shifts) { Shift.new }

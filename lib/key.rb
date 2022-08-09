@@ -1,7 +1,7 @@
 class Key
 
   attr_reader :key, :key_hash
-  def initialize(key = )
+  def initialize(key = h)
     @key = key
   end
 
