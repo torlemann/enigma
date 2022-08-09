@@ -11,16 +11,6 @@ RSpec.describe Shift do
    expect(shifts.character_set.count).to eq(27)
   end
 
-  it 'can create keys from key' do
-    expected = {
-      :a => 2,
-      :b => 27,
-      :c => 71,
-      :d => 15
-    }
-    expect(shifts.keys('02715')).to eq (expected)
-  end
-
   xit "can create offsets" do
     expected = {
       :off_a => 1,
