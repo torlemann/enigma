@@ -1,13 +1,21 @@
 class Shift
   attr_reader :character_set
 
-  def initialize
+  # def initialize
+  #   @character_set = ('a'..'z').to_a << ' '
+  #   @key = Key.new
+  #   @offset = Offset.new
+  # end
+
+  def initialize(key = Key.new, offset = Offset.new)
     @character_set = ('a'..'z').to_a << ' '
+    @key = key
+    @offset = offset
   end
 
-  def shifts(key, date)
-    keys = keys(key)
-    offsets = offsets(date)
+  def shifts(key, offset)
+    keys = @key.key_splitter(key)
+    offsets = @offset.date_splitter
     {
       A: keys[:a] + offsets[:off_a],
       B: keys[:b] + offsets[:off_b],
@@ -17,7 +25,7 @@ class Shift
   end
 
   def rotate(shift)
-    rotate = @character_set.rotate(shift) # will shift alphabet as if it were a circle by shift valuepassed in
-    @character_set.zip(rotate).to_h # zip will merge orig char_set with rotated char_set index by index to one array, but to_hash will orig char (by index) as key pointing to rotated char as value instead of as array
+    rotate = @character_set.rotate(shift)
+    @character_set.zip(rotate).to_h
   end
 end
