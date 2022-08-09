@@ -24,32 +24,55 @@ Now... I might be at a lilting jog. I need to **TRAIN**. I **NEED** to **PRACTIC
 
 ```markdown
 Score: 1
-"Two or more of the following are not successfully implemented: Enigma#encrypt, Enigma#decrypt, command line interfaces"
+- Two or more of the following are not successfully implemented: Enigma#encrypt, Enigma#decrypt, command line interfaces
+
+Well, that's obvious. Panic, wasting time, and deconstructing my code at the last minute didn't help matters.
 ```
 ### OOP
 
 ```markdown
 Score: 3
-"Project is broken into logical components that are appropriately encapsulated. No classes are unreasonably small or large, or contain knowledge/information/behavior that they shouldn’t know about. Student can articulate the single responsibilities of the various components.""
+- Project is broken into logical components that are appropriately encapsulated.
+No classes are unreasonably small or large, or contain knowledge/information/behavior that they shouldn’t know about.
+Student can articulate the single responsibilities of the various components.
+
+Decided that implementing a class for each aspect of the algorithm was inutitive - they are responsible for creating their own piece of the algorithm, which keeps them concise and adhering to LoD.
+The Generator module contains methods that can be used in multiple classes.
 ```
 ### Ruby Conventions
 
 ```markdown
 Score: 3
-"Code is mostly properly indented, spaced, and lines are not excessively long. Class, method, variable, and file names follow convention. Some enumerables/data structures chosen are the most efficient tool for a given job, and students can speak as to why those enumerables/data structures were chosen. At least one hash is implemented in a way that makes logical sense."
+- Code is mostly properly indented, spaced, and lines are not excessively long.
+Class, method, variable, and file names follow convention.
+Some enumerables/data structures chosen are the most efficient tool for a given job, and students can speak as to why those enumerables/data structures were chosen.
+At least one hash is implemented in a way that makes logical sense.
+
+I made it my mission to follow conventions, and utilized rubocop to lint.
+I utilize hashes for both keys and offsets. This seemed intuitive based on the algorithm set up, which will allow me to access the values for calculating shifts. 
+The hash for the rotate method points to the necessary values given the pieces of the message for the encrytion.
 ```
 ### TDD
 
 ```markdown
-Score: 3
-"Every method is tested at both the unit and integration level, and completely verify expected behavior (i.e., if a single method does 3 things, all 3 things are explicitly tested). Obvious edge cases are addressed. git history demonstrates students are writing tests before implementation code. Test coverage metrics show coverage at 99% or greater."
+Score: 3.5
+- Every method is tested at both the unit and integration level, and completely verify expected behavior (i.e., if a single method does 3 things, all 3 things are explicitly tested). Obvious edge cases are addressed.
+git history demonstrates students are writing tests before implementation code.
+Test coverage metrics show coverage at 99% or greater.
+
+Tests were written before code. SimpleCov returns 100%.
+I utilized mocks/stubs once, I would have liked to do another for the Offset class (and probably more had I gotten farther).
 ```
 ### Version Control
 
 ```markdown
 Score: 3
-"Minimum 30 commits and 3 pull requests. More than half of your pull requests include related and logical chunks of functionality, and are named and documented to clearly communicate the purpose of the pull request. No more than 3 commits include multiple pieces of functionality."
+"Minimum 30 commits and 3 pull requests.
+More than half of your pull requests include related and logical chunks of functionality, and are named and documented to clearly communicate the purpose of the pull request.
+No more than 3 commits include multiple pieces of functionality.
+
+It was a rough start, but I got a better flow with VC as time progressed as will be evident.
 ```
 
 ### Final Score:
-# 2.6
+# 2.7
