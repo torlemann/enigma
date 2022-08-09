@@ -1,23 +1,29 @@
 require_relative 'spec_helper'
 
 RSpec.describe Offset do
-  let(:offsets) { Offset.new }
+  let(:offset) { Offset.new('040895') }
 
   it 'exists' do
-    expect(offsets).to be_a Offset
+    expect(offset).to be_a Offset
   end
 
-  it 'has a character set' do
-    expect(offsets.character_set.count).to eq(27)
+  it 'has readable attributes' do
+    expect(offset.date_string).to eq('040895')
+    expect(offset.offset_hash).to eq({})
   end
 
-  it 'can create keys hash' do
+  it 'can generate a 6 digit string' do
+    offset_gen = Offset.new
+    expect(offset_gen.current_date.length).to eq 6
+  end
+
+  it 'can create offsets' do
     expected = {
-      a: 2,
-      b: 27,
-      c: 71,
-      d: 15
+      off_a: 1,
+      off_b: 0,
+      off_c: 2,
+      off_d: 5
     }
-    expect(offsets.split_keys('02715')).to eq(expected)
+    expect(offset.date_splitter).to eq(expected)
   end
 end
