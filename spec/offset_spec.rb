@@ -17,12 +17,12 @@ RSpec.describe Offset do
     expect(offset_gen.current_date.length).to eq 6
   end
 
-  it "can create offsets" do
+  it 'can create offsets' do
     expected = {
-      :off_a => 1,
-      :off_b => 0,
-      :off_c => 2,
-      :off_d => 5
+      off_a: 1,
+      off_b: 0,
+      off_c: 2,
+      off_d: 5
     }
     expect(offset.date_splitter).to eq(expected)
   end
