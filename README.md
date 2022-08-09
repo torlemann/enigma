@@ -11,7 +11,7 @@ I despaired, was about to give up, and mulled some more. After awhile I swallowe
 Well, what I hoped would be inspirational, eventually led to more despair. Even if I dissected code line-by-line and could understand and explain how everything functioned, I still didn't feel capable of turning around and writing something original, or at least original enough to not be "copying". I tried to justify the unoriginality in that the research done for a history paper isn't... reinventing history per se, your paper will still rehash the same information. But I didn't know how to change the code enough to buy that argument. I felt wrong. I just didn't have enough experience.
 I had pretty much resolved myself to failure when I took one last stab at the sky, even if was pretty much curtain call, and reached out to my mentor anyway (for advice). Thank goodness for him, he wouldn't let me give up on myself. He breathed new perspective into me, and little more confidence, and a little more steam. This morning, I talked to a few cohort-mates, and duh! I shouldn't have resorted to doom-and-gloom like I'm so apt to do. Everyone was looking at code, everyone was asking others for support, some even deciding to more loosely interpret (if not flagrantly disregard) the no-collaboration edict than more-conservative-me did. Well...
 
-I certainly learned some lessons during this project. Code, obviously. But more than that, it really reinforced things I've been learning about myself. I need to learn how to discipline myself better. To budget my time better. To not immediately give in to panic when confronted with challenges or stress. To develop my faculties for problem-solving. These aren't new things, necessarily, but without the trial by fire, the motivaiton for change was missing, and it did little to proselytize to myself. I am not an island. I need to seek help, and reach out, if I find myself flailing at the edge of a precipice, so that I do not end up falling into the depths. I need help learning and creating tools and habits to get better at these crucial skills. I avoided challenges (re: school) for the *longest* time, fearing the panic, the not knowing, the failure. All of that time led to atrophy. And as much as Turing tried to prepare me for the challenge that lied ahead, the words mostly echoed, because I didn't know how it felt. I didn't have an experience to compare it to. Starting Turing, I could barely walk (figuratively speaking), let alone sprinting. And Turing needed me to marathon.
+I certainly learned some lessons during this project. Code, obviously. But more than that, it really reinforced things I've been learning about myself. I need to learn how to discipline myself better. To budget my time better. To not immediately give in to panic when confronted with challenges or stress. To develop my faculties for problem-solving. These aren't new things, necessarily, but without the trial by fire, the motivaiton for change was missing, and it did little to proselytize to myself. I am not an island. I need to seek help, and reach out, if I find myself flailing at the edge of a precipice, so that I do not end up falling into the depths. I need help learning and creating tools and habits to get better at these crucial skills. I avoided challenges (re: school) for the *longest* time, fearing the panic, the not knowing, the failure. All of that time led to atrophy. And as much as Turing tried to prepare me for the challenge that lied ahead, the words mostly echoed, because I didn't know how it felt. I didn't have an experience to compare it to. Starting Turing, I could barely walk (figuratively speaking), let alone sprint. And Turing needed me to marathon.
 
 Now... I might be at a lilting jog. I need to **TRAIN**. I **NEED** to **PRACTICE**. So that I can run by the end of module 2, and full speed ahead beyond.
 
@@ -66,7 +66,7 @@ I utilized mocks/stubs once, I would have liked to do another for the Offset cla
 ### Version Control
 
 ```markdown
-Score: 3
+Score: 3.3
 "Minimum 30 commits and 3 pull requests.
 More than half of your pull requests include related and logical chunks of functionality, and are named and documented to clearly communicate the purpose of the pull request.
 No more than 3 commits include multiple pieces of functionality.
@@ -75,4 +75,4 @@ It was a rough start, but I got a better flow with VC as time progressed as will
 ```
 
 ### Final Score:
-# 2.7
+# 2.76
