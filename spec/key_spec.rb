@@ -9,7 +9,7 @@ RSpec.describe Key do
   end
 
   it 'has readable attributes' do
-    expect(key.key.count).to eq 5
+    expect(key.key.length).to eq 5
   end
 
   it 'can create keys from key' do
