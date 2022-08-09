@@ -1,4 +1,5 @@
 require 'date'
+require './lib/shifts'
 require './lib/enigma'
 
 RSpec.describe Enigma do
