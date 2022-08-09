@@ -1,6 +1,6 @@
 require 'simplecov'
 
-SimpleCov.start do 
+SimpleCov.start do
 end
 
 require './lib/key'
