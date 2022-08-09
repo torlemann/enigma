@@ -1,10 +1,10 @@
 require './lib/shifts.rb'
 
-RSpec.describe ShiftGenerator do
-  let(:shifts) {ShiftGenerator.new}
+RSpec.describe Shift do
+  let(:shifts) {Shift.new}
 
   it 'exists' do
-    expect(shifts).to be_a ShiftGenerator
+    expect(shifts).to be_a Shift
   end
 
   it 'has a character set' do
@@ -21,7 +21,7 @@ RSpec.describe ShiftGenerator do
     expect(shifts.keys('02715')).to eq (expected)
   end
 
-  it "can create offsets" do
+  xit "can create offsets" do
     expected = {
       :off_a => 1,
       :off_b => 0,
@@ -31,7 +31,7 @@ RSpec.describe ShiftGenerator do
     expect(shifts.offsets('040895')).to eq (expected)
   end
 
-  it "can create shifts" do
+  xit "can create shifts" do
     expected = {
       :A => 3,
       :B => 27,
@@ -41,7 +41,7 @@ RSpec.describe ShiftGenerator do
     expect(shifts.shifts('02715','040895')).to eq(expected)
   end
 
-  it "can rotate" do
+  xit "can rotate" do
     expect(shifts.rotate(3)["h"]).to eq "k"
     expect(shifts.rotate(27)["e"]).to eq "e"
     expect(shifts.rotate(73)["l"]).to eq "d"
